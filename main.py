@@ -97,7 +97,7 @@ def delete_task(message: Message) -> None:
 
 
 @bot.message_handler(content_types=['text'])
-def prompt_for_correct_command(message: Message) -> None:
+def ask_for_correct_command(message: Message) -> None:
     bot.send_message(message.from_user.id, "Некорректный запрос. Для подробной информации "
                                            "введите /help.")
 
